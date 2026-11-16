@@ -1,0 +1,493 @@
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #080808;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: red;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.3)),
+        url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about h2,
+.preview h2,
+.nutrition-preview h2 {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.about p {
+    color: #bbb;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* TRAINING CARDS */
+
+.preview {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #181818;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    flex: 1;
+    background-color: #252525;
+    padding: 35px 25px;
+    border-bottom: 3px solid red;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #bbb;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: red;
+    text-decoration: none;
+}
+
+
+/* NUTRITION PREVIEW */
+
+.nutrition-preview {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.nutrition-preview p {
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #080808;
+    padding: 25px;
+    text-align: center;
+    color: #888;
+}
+
+/* TRAINING HERO */
+
+.training-hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.4)),
+        url("../images/training.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.training-hero-content {
+    max-width: 650px;
+}
+
+.training-hero h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.training-hero p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* TRAINING CATEGORIES */
+
+.training-categories,
+.programmes,
+.principles {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-description {
+    color: #aaa;
+    margin: 20px 0 40px;
+}
+
+.training-grid,
+.programme-grid,
+.principle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.training-card,
+.programme-card,
+.principle-grid>div {
+    background: #202020;
+    padding: 35px 25px;
+    border-bottom: 3px solid red;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.training-card:hover,
+.programme-card:hover {
+    transform: translateY(-8px);
+    background: #292929;
+}
+
+.training-card h3,
+.programme-card h3,
+.principle-grid h3 {
+    margin-bottom: 20px;
+    color: red;
+}
+
+.training-card p,
+.programme-card p,
+.principle-grid p {
+    color: #bbb;
+    line-height: 1.7;
+}
+
+.programmes {
+    background: #181818;
+}
+
+.programme-card ul {
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.programme-card li {
+    margin-bottom: 12px;
+}
+
+
+/* TRAINING PRINCIPLES */
+
+.principle-grid>div {
+    background: #151515;
+}
+
+
+/* TRAINING CONTACT */
+
+.training-contact {
+    text-align: center;
+    padding: 80px 10%;
+    background: #242424;
+}
+
+.training-contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.training-contact p {
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .training-grid,
+    .programme-grid,
+    .principle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .training-hero h2 {
+        font-size: 36px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+}
+
+/* NUTRITION HERO */
+
+.nutrition-hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(to right,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.3)),
+        url("../images/nutrition.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.nutrition-hero-content {
+    max-width: 650px;
+}
+
+.nutrition-hero h2 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.nutrition-hero p {
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* NUTRITION INTRO */
+
+.nutrition-intro,
+.macros,
+.calories,
+.nutrition-goals,
+.healthy-eating {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.nutrition-intro p {
+    max-width: 800px;
+    margin: auto;
+    color: #bbb;
+    line-height: 1.8;
+}
+
+
+/* MACRONUTRIENTS */
+
+.macros,
+.nutrition-goals {
+    background: #181818;
+}
+
+.macro-grid,
+.calorie-grid,
+.goal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.macro-card,
+.calorie-grid>div,
+.goal-card {
+    background: #252525;
+    padding: 35px 25px;
+    border-bottom: 3px solid red;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.macro-card:hover,
+.goal-card:hover {
+    transform: translateY(-8px);
+}
+
+.macro-card h3,
+.calorie-grid h3,
+.goal-card h3 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.macro-card h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.macro-card p,
+.calorie-grid p,
+.goal-card p {
+    color: #bbb;
+    line-height: 1.7;
+}
+
+
+/* CALORIES */
+
+.calories {
+    background: #111;
+}
+
+
+/* HEALTHY EATING */
+
+.healthy-eating ul {
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px;
+    color: #ccc;
+    line-height: 2.2;
+}
+
+
+/* NUTRITION CONTACT */
+
+.nutrition-contact {
+    text-align: center;
+    padding: 80px 10%;
+    background: #242424;
+}
+
+.nutrition-contact h2 {
+    margin-bottom: 20px;
+}
+
+.nutrition-contact p {
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .macro-grid,
+    .calorie-grid,
+    .goal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nutrition-hero h2 {
+        font-size: 35px;
+    }
+
+}
